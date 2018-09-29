@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 frameset//EN" "http://www.w3.org/TR
+/html4/frameset.dtd">
+<html>
+<!-- Aspects of Signal Processing. D. Gibbon -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>
+Aspects of Signal Processing. D. Gibbon
+</title>
+
+<style type="text/css">
+    tdp {font-size:14}
+    td {font-size:14}
+    p {font-size:14}
+    pb {font-size:14;font-weight:bold}
+    li {font-size:12}
+    small {font-size:12}
+    big {font-size:18;font-weight:bold}
+    verybig {font-size:24;font-weight:bold}
+</style>
+
+</head>
+
+<body> 
+
+<pb>
+<font size="+2">
+Aspects of Signal Processing
+</font>
+</pb>
+
+<!-- Beginning of form -------------------------------------------------->
+<!-- <form> tag must NOT be in table for Chrome and some other browsers -->
+<br>
+<b>Filters</b><br>
+
+<form method="post" action="/cgi-bin/SigProc-CGI/lowpass-cgi.py" target="result">
+<table><tr><td width="250px">Low pass filter:</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+
+<form method="post" action="/cgi-bin/SigProc-CGI/highpass-cgi.py" target="result">
+<table><tr><td width="250px">High pass filter:</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+
+<form method="post" action="/cgi-bin/SigProc-CGI/bandpass-cgi.py" target="result">
+<table><tr><td width="250px">Band pass filter:</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+
+<form method="post" action="/cgi-bin/SigProc-CGI/hanning-cgi.py" target="result">
+<table><tr><td width="250px">Hann (Hanning, Cosine) Window:</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+
+<form method="post" action="/cgi-bin/SigProc-CGI/hamming-cgi.py" target="result">
+<table><tr><td width="250px">Hamming (Raised Cosine)window:</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+
+<b>Transformations</b><br>
+
+<form method="post" action="/cgi-bin/SigProc-CGI/fft-cgi.py" target="result">
+<table><tr><td width="250px">Fast Fourier Transform (FFT):</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+
+<form method="post" action="/cgi-bin/SigProc-CGI/hilbert-cgi.py" target="result">
+<table><tr><td width="250px">Hilbert Transformation:</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+
+<form method="post" action="/cgi-bin/SigProc-CGI/spectrogram-cgi.py" target="result">
+<table><tr><td colspan="2" width="250px">Spectrogram:
+&nbsp;&nbsp;&nbsp;
+<select name="wavfile">
+	<option selected value="Mandarin.wav">Mandarin</option>
+	<option value="English.wav">English</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;<input value= "Back" type="reset">
+</td><td><input value=" GO " type="submit"></td></tr>
+<tr><td align="right" colspan="2">
+Resolution: <input type="text" name="resolution" value="1000" size="2">
+Range: <input type="text" name="range" value="4000" size="2">
+</td><td><input value= "Back" type="reset">
+</td></tr></table>
+</form>
+
+<!--
+<b>Audio</b><br>
+
+<form method="post" action="/cgi-bin/SigProc-CGI/freqgen-cgi.py" target="result">
+<table><tr><td width="250px">Frequency generator:</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+
+
+<form method="post" action="/cgi-bin/SigProc-CGI/freqgensweep-cgi.py" target="result">
+<table><tr><td width="250px">Reverse:</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+
+
+<form method="post" action="/cgi-bin/SigProc-CGI/chipmunk-cgi.py" target="result">
+<table><tr><td width="250px">Chipmunks:</td><td><input value=" GO " type="submit"></td></tr></table>
+</form>
+-->
+
+</table>
+
+<font size="-2">
+<i>Created:
+Fr 7. Sep 12:50:44 CEST 2018
+D. Gibbon
+</i>
+</font>
+</body></html>
+

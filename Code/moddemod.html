@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 frameset//EN" "http://www.w3.org/TR
+/html4/frameset.dtd">
+<html>
+<!-- AM and FM modulation and demodulation. D. Gibbon -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>
+AM and FM modulation and demodulation. D. Gibbon
+</title>
+
+<style type="text/css">
+    tdp {font-size:14}
+    td {font-size:14}
+    p {font-size:14}
+    pb {font-size:14;font-weight:bold}
+    li {font-size:12}
+    small {font-size:12}
+    big {font-size:18;font-weight:bold}
+    verybig {font-size:24;font-weight:bold}
+</style>
+
+</head>
+
+<body> 
+
+<pb>
+<font size="+2">
+Amplitude and Frequency Modulation
+</font>
+</pb>
+
+<!-- Beginning of form -------------------------------------------------->
+<!-- <form> tag must NOT be in table for Chrome and some other browsers -->
+
+<form method="post" action="/cgi-bin/SigProc-CGI/moddemod-cgi.py" target="result">
+
+<!-- Plot selection table -------------------------------------------------------->
+
+<table valign="top">
+
+<tr valign="top">
+
+<td><table valign="top">
+
+<tr>
+<td>Carrier:</td><td><input type="checkbox" name="carrier" value="on" checked></td>
+<td>Modulator:</td><td><input type="checkbox" name="modulator" value="on" checked></td>
+</tr>
+
+<tr>
+<td>AM:</td><td> <input type="checkbox" name="am" value="on" checked></td>
+<td>AM FFT:</td><td><input type="checkbox" name="amfft" value="on" checked></td>
+<td>AM Hilbert:</td><td><input type="checkbox" name="amdemodhilbert" value="on" checked></td>
+<td>AM crystal set:</td><td><input type="checkbox" name="amdemodcrystalset" value="on" checked></td>
+</tr>
+
+<tr>
+<td>FM:</td><td><input type="checkbox" name="fm" value="on" checked></td>
+<td>FM FFT:</td><td><input type="checkbox" name="fmfft" value="on" checked></td>
+<td>FM demod:</td><td><input type="checkbox" name="fmdemod" value="on" checked></td>
+</tr>
+
+<tr align=center>
+<td colspan="8"><input value=" MODULATE " type="submit">
+<input value=" Reset F0 Form " type="reset"></td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+
+<font size="-2">
+<i>Created:
+Fr 7. Sep 09:47:16 CEST 2018,
+D. Gibbon</i>
+</font>
+
+</body></html>
+

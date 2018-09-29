@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 frameset//EN" "http://www.w3.org/TR
+/html4/frameset.dtd">
+<html>
+<!-- FM operations. D. Gibbon -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>
+Frequency demodulation / F0 estimation / Pitch tracking. D. Gibbon
+</title>
+
+<style type="text/css">
+    tdp {font-size:14}
+    td {font-size:14}
+    p {font-size:14}
+    pb {font-size:14;font-weight:bold}
+    li {font-size:12}
+    small {font-size:12}
+    big {font-size:18;font-weight:bold}
+    verybig {font-size:24;font-weight:bold}
+</style>
+
+</head>
+
+<body> 
+
+<pb>
+<font size="+2">
+Frequency demodulation / F0 estimation / Pitch tracking:
+comparing algorithms
+</font>
+</pb>
+
+<!-- Beginning of form -------------------------------------------------->
+<!-- <form> tag must NOT be in table for Chrome and some other browsers -->
+
+<form method="post" action="/cgi-bin/SigProc-CGI/fm-cgi.py" target="result">
+<table>
+<tr><td colspan="7"><b>Data</b><br>
+<select name="filebase">
+<option selected value="jiayan-5s">North Wind & Sun (Mandarin, jiayan)</option>
+<option value="liangjj-3.8s">North Wind (Mandarin, liangjj)</option>
+<option value="liupeng-4s">North Wind (Mandarin, liupeng)</option>
+<option value="liuqp-6s">North Wind (Mandarin, liuqp)</option>
+<option value="liyang-4s">North Wind (Mandarin, liyang)</option>
+<option value="shjj-4.6s">North Wind (Mandarin, shjj)</option>
+<option value="tangzd-6s">North Wind (Mandarin, tangzd)</option>
+<option value="wangwei-5s">North Wind (Mandarin, wangwei)</option>
+<option value="wuxi-5s">North Wind & Sun (Mandarin, wuxi)</option>
+<option value="xn-3s">North Wind & Sun (Mandarin, xn)</option>
+<option value="Abercrombie_NW048_sentence01">North Wind & Sun (English RP)</option>
+<option value="sine-200x5x6">Modulated 200x5 sinusoid calibration signal</option>
+</select>
+</td>
+</tr><tr align="center">
+<td><b>Voice type</b><br>
+<select name="voicetype">
+<option value="high">high pitch</option>
+<option selected value="mid">mid pitch</option>
+<option value="low">low pitch</option>
+</select>
+</td>
+<td><b>FFT</b>
+<input type="checkbox" name="fft" value="on" checked>
+</td>
+<td><b>0Xing</b>
+<input type="checkbox" name="zer0x" value="on" checked>
+</td>
+<td><b>Peak</b>
+<input type="checkbox" name="peak" value="on" checked>
+</td>
+<td><b>Operation</b><br>
+<input value=" DEMODULATE FM " type="submit">
+<input value=" Reset F0 Form " type="reset"></td>
+</tr>
+</table>
+
+
+</form>
+
+<font size="-2">
+<i>Created:
+Fr 7. Sep 12:50:44 CEST 2018
+D. Gibbon
+</i>
+</font>
+
+</body></html>
+
